@@ -1,7 +1,7 @@
 # weather-app
 
 ## About
-A simple app to get current weather. [Try It](https://dashboard.heroku.com/apps/mustafa-weather-forecast-app)
+A simple app to get current weather. [Try It](https://mustafa-weather-forecast-app.herokuapp.com/)
 
 Technologies
 * Javascript - Node.js

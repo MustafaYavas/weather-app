@@ -60,10 +60,14 @@ header a{
     margin-top: 3rem;
 }
 
-#help a{
+.link a{
     text-decoration: none;
     color: blue;
     font-weight: bolder;
+}
+
+.link a:hover{
+    text-decoration: underline;
 }
 
 /* #footerDiv p{

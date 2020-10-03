@@ -56,6 +56,10 @@ header a{
     padding: 8px;
 }
 
+#message-one{
+    margin-top: 3rem;
+}
+
 /* #footerDiv p{
     text-align: center;
     padding: 5px;

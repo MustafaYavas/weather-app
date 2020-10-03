@@ -8,8 +8,10 @@ const getForecast = (latitude, longitude, callback) => {
             callback("Unable to connect to weather services", undefined);
         else if(body.error)
             callback("Unable to find location. Try another search", undefined);
-        else
-            callback(undefined, ""+ body.current.weather_descriptions[0]+", "+ body.current.feelslike + ". There is a "+body.current.precip+"% chance of rain");
+        else{
+            console.log(body.current);
+            callback(undefined, `It is ${body.current.weather_descriptions[0]} and ${body.current.feelslike}°C. There is a ${body.current.precip}% chance of rain. Wind speed ${body.current.wind_speed} kmh and wind direction ${body.current.wind_dir}. The humidity ${body.current.humidity}%`);
+        }
     })
 }
 

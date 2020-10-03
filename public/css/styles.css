@@ -60,6 +60,12 @@ header a{
     margin-top: 3rem;
 }
 
+#help a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
 /* #footerDiv p{
     text-align: center;
     padding: 5px;

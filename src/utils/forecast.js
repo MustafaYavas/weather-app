@@ -9,7 +9,7 @@ const getForecast = (latitude, longitude, callback) => {
         else if(body.error)
             callback("Unable to find location. Try another search", undefined);
         else
-            callback(undefined, ""+ body.current.weather_descriptions[0]+", "+ body.current.feelslike);
+            callback(undefined, ""+ body.current.weather_descriptions[0]+", "+ body.current.feelslike + ". There is a "+body.current.precip+"% chance of rain");
     })
 }
 

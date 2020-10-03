@@ -14,6 +14,6 @@ APIs that used
 Install Packages
 >npm install
 
-Open [http://localhost:3000/](https://www.google.com) to run app
+Open [http://localhost:3000](http://localhost:3000/) to run app
 >npm run start
 

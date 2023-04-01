@@ -7,9 +7,8 @@
 }
 
 .body img {
-  height: auto !important;
   z-index: -2;
-  max-height: 100vh;
+  min-height: calc(100vh - 92px);
   object-fit: cover;
   opacity: 0.5;
 }
@@ -20,10 +19,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 100%); */
   background: linear-gradient(
     to bottom,
-    rgb(252, 95, 95),
+    rgb(250, 117, 117),
     #333641 50%,
     #333641 100%
   );

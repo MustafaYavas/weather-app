@@ -34,7 +34,7 @@
       border: 2px solid transparent;
 
       &:hover {
-        color: var(--main-text-hover) !important;
+        color: var(--main-text-dull) !important;
       }
     }
 
@@ -45,8 +45,8 @@
       padding: 6px 1.5rem;
 
       &:hover {
-        color: var(--second-color-hover) !important;
-        border: 2px solid var(--second-color-hover);
+        color: var(--second-color-dull) !important;
+        border: 2px solid var(--second-color-dull);
       }
     }
   }

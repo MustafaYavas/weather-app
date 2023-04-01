@@ -1,7 +1,31 @@
 :root {
   --main-color: #333641;
   --second-color: #0baddc;
-  --second-color-hover: rgba(11, 173, 220, 0.8);
+  --second-color-dull: rgba(11, 173, 220, 0.8);
   --main-text: #fff;
-  --main-text-hover: rgba(255, 255, 255, 0.8);
+  --main-text-dull: rgba(255, 255, 255, 0.8);
+}
+
+.body img {
+  height: auto !important;
+  z-index: -2;
+  max-height: 100vh;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.body-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 100%); */
+  background: linear-gradient(
+    to bottom,
+    rgb(252, 95, 95),
+    #333641 50%,
+    #333641 100%
+  );
+  z-index: -1;
 }

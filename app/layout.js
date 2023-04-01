@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import '../styles/global.css';
 import Header from './components/header';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="body">
+        <div className="body-img">
+          <Image src="/images/bg.jpg" alt="bg" fill />
+        </div>
         <Header />
         <main className="container">{children}</main>
       </body>

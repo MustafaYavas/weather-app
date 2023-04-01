@@ -1,0 +1,7 @@
+:root {
+  --main-color: #333641;
+  --second-color: #0baddc;
+  --second-color-hover: rgba(11, 173, 220, 0.8);
+  --main-text: #fff;
+  --main-text-hover: rgba(255, 255, 255, 0.8);
+}

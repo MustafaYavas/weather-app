@@ -14,9 +14,7 @@ const HomePage = async ({ params }) => {
 
   return (
     <div>
-      {params?.city?.length > 0 && (
-        <HomeContainer weather={weatherInfo} city={cityInfo} />
-      )}
+      <HomeContainer weather={weatherInfo} city={cityInfo} />
     </div>
   );
 };

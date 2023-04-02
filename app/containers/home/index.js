@@ -6,7 +6,7 @@ const HomeContainer = ({ weather, city }) => {
   return (
     <div>
       <Input />
-      <WeatherSection weather={weather} city={city} />
+      {weather && <WeatherSection weather={weather} city={city} />}
     </div>
   );
 };

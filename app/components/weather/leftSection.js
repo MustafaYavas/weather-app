@@ -1,5 +1,3 @@
-'use client';
-
 import { getWeatherIcon } from '@/helpers/icons';
 import styles from './weather.module.scss';
 import { getTime } from '@/helpers/timeFunctions';

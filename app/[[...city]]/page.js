@@ -3,12 +3,12 @@ import React from 'react';
 import HomeContainer from '../containers/home';
 import { getWeatherData } from '../services/city';
 
-const HomePage = async ({ params }) => {
+const HomePage = async ({ searchParams }) => {
   let weatherInfo;
   let cityInfo;
 
-  if (params?.city?.length > 0) {
-    const datas = await getWeatherData(params.city);
+  if (searchParams?.q?.length > 0) {
+    const datas = await getWeatherData(searchParams.q);
     weatherInfo = datas?.weatherInfo;
     cityInfo = datas?.cityInfo;
   }

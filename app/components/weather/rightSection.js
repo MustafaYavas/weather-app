@@ -8,7 +8,7 @@ const RightSection = ({ datas }) => {
       {datas?.map((data, i) => (
         <div
           key={data.dt}
-          className={`col-12 col-md-2 p-0 ${styles.right}`}
+          className={`col-3 col-md-2 p-0 ${styles.right}`}
           style={{
             backgroundColor: i % 2 === 0 ? 'var(--main-color2)' : '',
           }}

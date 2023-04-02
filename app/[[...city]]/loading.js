@@ -6,7 +6,7 @@ const Loading = () => {
       style={{ height: 'calc(100vh - 92px)' }}
       className="d-flex justify-content-center align-items-center text-light"
     >
-      <div class="lds-ring">
+      <div className="lds-ring">
         <div></div>
         <div></div>
         <div></div>

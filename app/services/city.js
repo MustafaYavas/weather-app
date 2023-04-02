@@ -25,9 +25,7 @@ const getWeatherData = async (city) => {
     let cityInfo = weatherDatas.city;
 
     return { weatherInfo, cityInfo };
-  } catch (error) {
-    // throw new Error(error);
-  }
+  } catch (error) {}
 };
 
 export { getWeatherData };

@@ -20,7 +20,7 @@
     }
   }
 
-  button {
+  a {
     position: absolute;
     right: 4px;
     top: 4px;
@@ -31,9 +31,19 @@
     border: none;
     color: var(--main-text);
     font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       color: var(--main-text-dull);
     }
+  }
+
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
   }
 }

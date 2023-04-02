@@ -1,0 +1,64 @@
+.weather {
+  background-color: var(--main-color-dull);
+  border-radius: 12px;
+  margin: 5rem 6px !important;
+  overflow: hidden;
+
+  .left {
+    padding: 0;
+
+    .left-header {
+      color: var(--main-text-dull);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      background-color: var(--main-color-dull2);
+      padding: 0 12px;
+    }
+
+    .left-body {
+      padding: 12px;
+
+      .title {
+        color: var(--main-text-dull);
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .degree {
+        color: var(--main-text);
+        font-size: 48px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .right {
+    .right-header {
+      color: var(--main-text-dull);
+      font-size: 12px;
+    }
+
+    .right-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .degree-first {
+        margin-top: 2rem;
+        color: var(--main-text-dull);
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .degree-second {
+        margin-top: 1rem;
+        color: var(--main-text-dull);
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

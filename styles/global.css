@@ -1,5 +1,8 @@
 :root {
   --main-color: #333641;
+  --main-color2: rgba(52, 55, 66, 0.7);
+  --main-color-dull: #3e4149;
+  --main-color-dull2: #3a3d44;
   --second-color: #0baddc;
   --second-color-dull: rgba(11, 173, 220, 0.8);
   --main-text: #fff;

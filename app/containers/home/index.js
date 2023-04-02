@@ -1,10 +1,12 @@
 import Input from '@/app/components/input';
+import WeatherSection from '@/app/components/weather';
 import React from 'react';
 
-const HomeContainer = () => {
+const HomeContainer = ({ weather, city }) => {
   return (
     <div>
       <Input />
+      <WeatherSection weather={weather} city={city} />
     </div>
   );
 };

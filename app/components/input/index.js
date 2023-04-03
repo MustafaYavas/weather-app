@@ -7,7 +7,7 @@ const Input = () => {
   const [value, setValue] = useState('');
 
   return (
-    <div className={styles.form}>
+    <div className={`${styles.form} w-100`}>
       <input
         placeholder="Find your location..."
         type="text"
@@ -15,7 +15,7 @@ const Input = () => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <Link href={`/city?q=${value}`} className={value ? '' : styles.disabled}>
+      <Link href={`/${value}`} className={value ? '' : styles.disabled}>
         Find
       </Link>
     </div>

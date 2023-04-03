@@ -31,6 +31,14 @@
   z-index: -1;
 }
 
+.page-container {
+  height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .body-img {
     height: 160vh !important;

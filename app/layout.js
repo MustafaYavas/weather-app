@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 
 import '../styles/global.css';
-import Header from './components/header';
+import Header from '../components/header';
 import Image from 'next/image';
-import Input from './components/input';
+import Input from '../components/input';
 
 export const metadata = {
   title: 'Cloudy',

@@ -1,10 +1,9 @@
-import Input from '@/app/components/input';
-import React from 'react';
+import styles from './styles.module.scss';
 
 const HomeContainer = () => {
   return (
-    <div>
-      <Input />
+    <div className={styles.container}>
+      <p>Search a location</p>
     </div>
   );
 };

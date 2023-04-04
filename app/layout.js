@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/global.css';
 import Header from './components/header';
 import Image from 'next/image';
+import Input from './components/input';
 
 export const metadata = {
   title: 'Cloudy',
@@ -20,7 +21,10 @@ export default function RootLayout({ children }) {
           <Image src="/images/bg.jpg" alt="bg" fill />
         </div>
         <Header />
-        <main className="container">{children}</main>
+        <main className="container">
+          <Input />
+          {children}
+        </main>
       </body>
     </html>
   );

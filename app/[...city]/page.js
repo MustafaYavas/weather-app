@@ -1,5 +1,3 @@
-import React from 'react';
-
 import CityContainer from '../containers/city';
 import { getWeatherData } from '../services/city';
 import { notFound } from 'next/navigation';

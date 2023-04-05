@@ -14,7 +14,7 @@ const getWeatherData = async (city) => {
     const { lat, lon } = locDatas[0];
 
     const weatherResult = await fetch(
-      `${BASE_URL}/data/2.5/forecast?lat=${lat}&lon=${lon}&${API}`
+      `${BASE_URL}/data/2.5/forecast?lat=${lat}&lon=${lon}&${API}&units=metric`
     );
 
     if (!weatherResult.ok)

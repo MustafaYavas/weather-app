@@ -6,19 +6,13 @@ const getWeatherData = async (city) => {
     const locResult = await fetch(
       `${BASE_URL}/geo/1.0/direct?q=${city}&limit=1&${API}`
     );
-
-    if (!locResult.ok)
-      throw new Error('An unknown error has been occured. Please try again!');
-
     const locDatas = await locResult.json();
-    const { lat, lon } = locDatas[0];
+
+    if (locDatas.length === 0) throw new Error('City not found!');
 
     const weatherResult = await fetch(
-      `${BASE_URL}/data/2.5/forecast?lat=${lat}&lon=${lon}&${API}&units=metric`
+      `${BASE_URL}/data/2.5/forecast?lat=${locDatas[0].lat}&lon=${locDatas[0].lon}&${API}&units=metric`
     );
-
-    if (!weatherResult.ok)
-      throw new Error('An unknown error has been occured. Please try again!');
 
     const weatherDatas = await weatherResult.json();
 

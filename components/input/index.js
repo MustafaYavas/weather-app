@@ -15,7 +15,11 @@ const Input = () => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <Link href={`/${value}`} className={value ? '' : styles.disabled}>
+      <Link
+        onClick={() => setValue('')}
+        href={`/${value}`}
+        className={value ? '' : styles.disabled}
+      >
         Find
       </Link>
     </div>

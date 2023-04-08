@@ -32,11 +32,15 @@
 }
 
 .page-container {
-  height: calc(100vh - 92px);
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.page-container p {
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 768px) {

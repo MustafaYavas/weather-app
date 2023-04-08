@@ -1,7 +1,7 @@
 'use client';
 import styles from './styles.module.scss';
 
-const error = () => {
+const Error = () => {
   return (
     <div className="page-container">
       <p className={styles.message}>
@@ -12,4 +12,4 @@ const error = () => {
   );
 };
 
-export default error;
+export default Error;

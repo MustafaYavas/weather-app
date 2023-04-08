@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="body">
         <div className="body-img">
-          <Image src="/images/bg.jpg" alt="bg" fill />
+          <Image src="/images/bg.jpg" alt="bg" fill priority={true} />
         </div>
         <Header />
         <main className="container">
